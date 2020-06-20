@@ -1,0 +1,31 @@
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows:true,
+        dots:false,
+        adaptiveHeight:true,
+        slidesToShow:2,
+        slidesToScroll:2,
+        speed:800,
+        easing:"linear",
+        infinite:true,
+        autoplay:true,
+        autoplaySpeed:2500,
+        pauseOnFocus:true,
+        pauseOnHover:true,
+        pauseOnDotsHover:false,
+        waitForAnimate:true,
+        centerMode:true,
+        variableWidth:false,
+        rows:1,
+        slidesPerRow:1,
+        vertical:false,
+        verticalSwiping:false,
+    });
+});
+$(document).ready(function(){
+    $('.header__burger').click(function(event){
+        $('.header__burger,.header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
+
