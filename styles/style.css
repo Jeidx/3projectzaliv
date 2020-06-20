@@ -262,7 +262,6 @@ body{
     background: url("../img/iconmonstr-angel-right-circle-thin.svg") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-prev{
-   
     right: 0;
     background: url("../img/iconmonstr-angel-left-circle-thin.svg") 0 0 / 100% no-repeat;
 }
@@ -423,7 +422,8 @@ width: 100%;
     display: flex;
 }
 .social-link__item{
-    margin-left: 12px;
+    margin-left: 5px;
+    padding: 2px;
 }
 .fab{
     font-size: 24px;
@@ -512,7 +512,6 @@ width: 100%;
         margin-left: 0;
     }
     .section__4-list__text{
-        margin: 20px;
         width: 100%;
     }
     .wrp-footer{
@@ -585,7 +584,7 @@ width: 100%;
         right:  0;
         width: 100%;
         height: 100%;
-        background-color:rgba(1, 8, 24, 0.9);
+        background-color:rgba(1, 8, 24, .99);
         padding:70px 10px 20px 0px ;
         transition: all .3s ease 0s;
         overflow: auto;
@@ -623,7 +622,24 @@ width: 100%;
     .header-footer-list{
         display: none;
     }
-
+    .main__list-title{
+        font-size: 50px;
+    }
+    .wrp-list__title{
+        font-size: 35px;
+    }
+    .main__list-subtitle{
+        font-size: 30px;
+    }
+    .wrp-list__text{
+        font-size: 18px;
+    }
+    .section__4-list__title{
+        font-size: 35px;
+    }
+    .section__4-list__text{
+        font-size: 18px;
+    }
     .lower__footer{
         padding:30px 5px;
     }
@@ -640,10 +656,23 @@ width: 100%;
         text-align: center;
     }
     .slider .slick-arrow.slick-next{ 
+        background: transparent;
+        left: 0;
+    }
+    .slider .slick-arrow.slick-next:hover{
         display: none;
     }
-    .slider .slick-arrow.slick-prev{
+    .slider .slick-arrow.slick-prev:hover{
         display: none;
+        right: 0;
+    }
+    .slider .slick-arrow.slick-prev{
+        background: transparent;
+      
+    }
+    .slick-arrow{
+        background: transparent;
+        box-shadow: none;
     }
     .art-2__title{
         font-size: 30px;
@@ -654,6 +683,15 @@ width: 100%;
 @media screen and (max-width: 425px) {
     .social-links{
         flex-wrap: wrap;
+    }
+    .section__4-list__title{
+        font-size: 25px;
+    }
+    .section__4-list{
+        padding-top: 10px;
+    }
+    .main__list-button{
+        margin-top: 10px;
     }
 }
 @media screen and (max-width: 320px) {
