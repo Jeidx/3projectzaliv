@@ -15,7 +15,7 @@ $(document).ready(function(){
         pauseOnDotsHover:false,
         waitForAnimate:true,
         centerMode:true,
-        variableWidth:false,
+        variableWidth:true,
         rows:1,
         slidesPerRow:1,
         vertical:false,
